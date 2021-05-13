@@ -34,7 +34,7 @@ public class EmployeeSearchController {
 
     @Operation(description = "Fetch similar ")
     @PostMapping("/search")
-    public ResponseEntity<List<Employee>> save(@RequestBody Employee employee)
+    public ResponseEntity<List<Employee>> search(@RequestBody Employee employee)
     {
         List<Employee> response=employeeService.search(employee);
         System.out.println(response);
